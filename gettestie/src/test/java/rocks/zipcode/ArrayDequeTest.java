@@ -34,4 +34,16 @@ public class ArrayDequeTest {
         Assert.assertEquals("0",s.getFirst());
         Assert.assertEquals("1",s.getLast());
     }
+    @Test
+    public void offerFirstLastTest() {
+        //Given
+        Deque<String> s = new ArrayDeque<>();
+        //When
+        s.offer("0");
+        s.offerFirst("1");
+        s.offerLast("2");
+        //Then
+        Assert.assertEquals("1",s.getFirst());
+        Assert.assertEquals("2",s.getLast());
+    }
 }
