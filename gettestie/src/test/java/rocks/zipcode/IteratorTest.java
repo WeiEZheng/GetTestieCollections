@@ -1,4 +1,4 @@
 package rocks.zipcode;
 
-public class IteratorTest {
+public class IteratorTest{
 }
